@@ -36,7 +36,7 @@ def create_database():
 
 # insert data to database from csv files
 
-# insert data to database cleandatabase from csvfile clean_stations.csv
+# insert data to database cleandatabase from csv file clean_stations.csv
 def insert_data(engine, cleanstations, cleanmeasure):
     with open('clean_stations.csv', 'r') as f:
         reader = csv.reader(f)
@@ -53,7 +53,7 @@ def insert_data(engine, cleanstations, cleanmeasure):
             ))
         conn.close()
 
-    # insert data to cleandatabase from csvfile clean_measure.csv
+    # insert data to cleandatabase from csv file clean_measure.csv
     with open('clean_measure.csv', 'r') as f:
         reader = csv.reader(f)
         conn = engine.connect()
